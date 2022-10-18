@@ -1,7 +1,7 @@
 let decreaseButton = document.createElement('button');
 decreaseButton.setAttribute('data-action', 'decreaseNumber');
 let decreaseImage = document.createElement('img');
-decreaseImage.setAttribute('src', 'img/minus-nuovo.svg');
+decreaseImage.setAttribute('src', 'img/minus.svg');
 decreaseImage.setAttribute('data-action', 'decreaseNumber');
 decreaseButton.append(decreaseImage);
 
@@ -10,7 +10,7 @@ decreaseButton.append(decreaseImage);
 let resetButton = document.createElement('button');
 resetButton.setAttribute('data-action', 'resetNumber');
 let resetImage = document.createElement('img');
-resetImage.setAttribute('src', 'img/reset-button.svg');
+resetImage.setAttribute('src', 'img/reset.svg');
 resetImage.setAttribute('data-action', 'resetNumber');
 resetButton.append(resetImage);
 
