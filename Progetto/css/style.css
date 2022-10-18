@@ -10,6 +10,15 @@ body {
   color: white;
   background-color: #272222;
   font-family: sans-serif;
+  text-align: center;
+}
+body .title {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  text-shadow: 0px 5px 10px #000000;
 }
 body .wrapper-external {
   position: absolute;
@@ -59,6 +68,9 @@ body .wrapper-external .wrapper-internal .container-counter .container-buttons b
 }
 
 @media screen and (max-width: 850px) {
+  body .title {
+    font-size: 2.5em;
+  }
   body .wrapper-external {
     width: 85vw;
     max-width: 385px;
@@ -86,6 +98,9 @@ body .wrapper-external .wrapper-internal .container-counter .container-buttons b
   }
 }
 @media screen and (min-width: 851px) {
+  body .title {
+    font-size: 4em;
+  }
   body .wrapper-external {
     width: 40vw;
     height: 60vh;
