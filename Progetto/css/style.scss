@@ -1,0 +1,164 @@
+$sfondo: #272222;
+$wrap-esterno: #284026;
+$wrap-interno: #517545;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    background-color: $sfondo;
+    font-family: sans-serif;
+
+    .wrapper-external{
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-color: $wrap-esterno;
+        border-radius: 10px;
+        .wrapper-internal{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            box-shadow: 0 10px 19px 0 rgba(0,0,0,0.55);
+            background-color: $wrap-interno;
+            border-radius: 10px;
+
+            .container-counter{
+                text-align: center;
+
+                .container-number{
+                    text-align: center;
+
+                }
+                .container-buttons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    button{
+                        cursor: pointer;
+                        background-color: $wrap-esterno;
+                        color: white;
+                        border: 0;
+                        text-align: center;
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        img{
+
+                        }
+
+                        &:nth-child(2){
+                            margin: 2vw;
+                            border: 5px solid $wrap-esterno;
+                            background-color: $wrap-interno;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    body{
+        .wrapper-external{
+            width: 85vw;
+            max-width: 385px;
+            height: 45vh;
+            max-height: 380px;
+
+            .wrapper-internal{
+                width: 90vw;
+                max-width: 415px;
+                height: 40vh;
+                max-height: 340px;
+                .container-counter{
+                    .container-number{
+                        font-size: 4.5em;
+                        margin-bottom: 3vh;
+                    }
+                    .container-buttons{
+                        button{
+                            font-size: 4.5vw;
+                            padding: 0.5vw min(8vw, 25px);
+                            height: 17vw;
+                            max-height: 70px;
+                            img{
+                                width: min(8vw, 35px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 851px) {
+    body{
+        .wrapper-external{
+            width: 40vw;
+            height: 60vh;
+
+            .wrapper-internal{
+                width: 45vw;
+                height: 50vh;
+
+                .container-counter{
+
+                    .container-number{
+                        font-size: 5em;
+                        margin-bottom: 3vh;
+                    }
+                    .container-buttons{
+
+                        button{
+                            font-size: 4.5vw;
+                            padding: 0 4vw;
+                            height: 6vw;
+
+                            img{
+                                width: 3vw;
+                            }
+
+                            transition: background-color 0.1s ease-in-out;
+                            &:nth-child(2){
+
+                                &:hover{
+                                    border: 5px solid darken($wrap-esterno, 1%);
+                                    background-color: darken($wrap-esterno, 1%);
+                                }
+                            }
+
+                            &:hover{
+                                background-color: darken($wrap-esterno, 5%);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
