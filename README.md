@@ -21,7 +21,7 @@
     </a>
     <br>
     <br>
-    <img alt="Counter image" src="https://github.com/dariodini/JS-Counter/blob/master/Progetto/img/Counter.png" width="750">
+    <img alt="Counter image" src="https://github.com/dariodini/JS-Counter/blob/master/Progetto/Assets/img/Counter.png" width="750">
 </p>
 
 ---
@@ -29,7 +29,7 @@
 <p align="center">
     I have created something that can be <strong>responsive</strong>, so that it can be used both from a PC and from a smartphone.
     <br>
-    <img alt="Counter responsive" src="https://github.com/dariodini/JS-Counter/blob/master/Progetto/img/Counter-responsive.gif" width="750">  
+    <img alt="Counter responsive" src="https://github.com/dariodini/JS-Counter/blob/master/Progetto/Assets/img/Counter-responsive.gif" width="750">  
 </p>
 
 ---
