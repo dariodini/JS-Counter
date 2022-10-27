@@ -1,7 +1,5 @@
 class Button{
-
     number = 0;
-
     constructor(elem) {
         this._elem = elem;
         this.updateNumber(this.number);
@@ -11,20 +9,15 @@ class Button{
     updateNumber() {
         document.getElementById('container-number').innerText = this.number;
     }
-
     increaseNumber(){
         this.updateNumber(this.number++);
     }
-
     resetNumber(){
         this.updateNumber(this.number = 0);
     }
-
     decreaseNumber(){
         this.updateNumber(this.number --);
     }
-
-
     onClick(event) {
         let action = event.target.dataset.action;
         if (action) {
@@ -33,7 +26,5 @@ class Button{
     };
 }
 
-
 let buttons = document.getElementById('container-buttons');
-
 new Button(buttons);
