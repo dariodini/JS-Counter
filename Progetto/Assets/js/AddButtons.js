@@ -1,30 +1,18 @@
-let decreaseButton = document.createElement('button');
-decreaseButton.setAttribute('data-action', 'decreaseNumber');
-let decreaseImage = document.createElement('img');
-decreaseImage.setAttribute('src', 'img/minus.svg');
-decreaseImage.setAttribute('data-action', 'decreaseNumber');
+let decreaseButton = createHtmlElement('button', '', '', 'data-action', 'decreaseNumber');
+let decreaseImage = createHtmlElement('img', '', '', ['src', 'data-action'], ['Assets/img/minus.svg', 'decreaseNumber'])
 decreaseButton.append(decreaseImage);
 
 
-
-let resetButton = document.createElement('button');
-resetButton.setAttribute('data-action', 'resetNumber');
-let resetImage = document.createElement('img');
-resetImage.setAttribute('src', 'img/reset.svg');
-resetImage.setAttribute('data-action', 'resetNumber');
+let resetButton = createHtmlElement('button', '', '', 'data-action', 'resetNumber');
+let resetImage = createHtmlElement('img', '', '', ['src', 'data-action'], ['Assets/img/reset.svg', 'resetNumber'])
 resetButton.append(resetImage);
 
 
-let increaseButton = document.createElement('button');
-increaseButton.setAttribute('data-action', 'increaseNumber');
-let increaseImage = document.createElement('img');
-increaseImage.setAttribute('src', 'img/add.svg');
-increaseImage.setAttribute('data-action', 'increaseNumber');
+let increaseButton = createHtmlElement('button', '', '', 'data-action', 'increaseNumber');
+let increaseImage = createHtmlElement('img', '', '', ['src', 'data-action'], ['Assets/img/add.svg', 'increaseNumber'])
 increaseButton.append(increaseImage);
 
 
-let containerButtons = document.getElementById('container-buttons');
-
-containerButtons.append(decreaseButton, resetButton, increaseButton);
+document.getElementById('container-buttons').append(decreaseButton, resetButton, increaseButton);
 
 
